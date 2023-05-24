@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SiswaController; //panggil controller yg ada dibuat sebelumnya
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +35,9 @@ Route::get('/nilai', function(){
 Route::get('/daftar_nilai', function(){
     return view('daftar_nilai');
 });
+
+//mengarahkan routing ke controller
+Route::get('/siswa', [SiswaController::class, 'dataSiswa']);
+
+//mengarahkan ke controller dashboardcontroller
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('index');
