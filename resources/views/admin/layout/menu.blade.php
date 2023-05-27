@@ -4,7 +4,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.php?url=dashboard">
+                            <a class="nav-link" href="{{url('admin/dashboard')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -16,8 +16,9 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="index.php?url=product">Data Produk</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="{{url('admin/pegawai')}}">Data Pegawai</a>
+                                    <a class="nav-link" href="{{url('admin/divisi')}}">Data Divisi</a>
+                                    <a class="nav-link" href="">Light Sidenav</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -59,19 +60,6 @@
                             <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
-                            </a>
-                            <!-- fitur tambahan -->
-                            <a class="nav-link" href="about.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                About
-                            </a>
-                            <a class="nav-link" href="contact.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Contact
-                            </a>
-                            <a class="nav-link" href="login.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Login
                             </a>
                         </div>
                     </div>
