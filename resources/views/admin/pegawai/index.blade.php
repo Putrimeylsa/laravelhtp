@@ -61,10 +61,7 @@
                                         @php
                                         $no = 1;
                                         @endphp
-                                        
                                         @foreach($pegawai as $p)
-                                        <!-- $pegawai mewakili variabel $pegawai di dlm PegawaiControll as p-->
-
                                         <tr>
                                             <td>{{$no}}</td>
                                             <td>{{$p->nip}}</td>
@@ -75,6 +72,13 @@
                                             <td>{{$p->tmp_lahir}}</td>
                                             <td>{{$p->tgl_lahir}}</td>
                                             <td>{{$p->alamat}}</td>
+                                            <td>
+                                                @empty($p->foto)
+                                                <img src="{{url('admin/image/nophoto.png')}}" width="100%">
+                                                @else 
+                                                <img src="{{url('admin/image')}}/{{$p->foto}}" width="100%">
+                                                @endempty
+                                            </td>
                                             <td>
                                                 <form action="#" method="POST">
                                                   
