@@ -23,7 +23,8 @@ class DivisiController extends Controller
      */
     public function create()
     {
-        //
+        //arahkan ke file create
+        return view('admin.divisi.create');
     }
 
     /**
@@ -31,7 +32,11 @@ class DivisiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //fungsi untuk mengisi data pada store
+        DB::table('divisi')->insert([
+            'nama' =>$request->nama,
+        ]);
+        return redirect('admin/divisi');
     }
 
     /**

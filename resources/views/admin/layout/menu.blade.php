@@ -16,6 +16,7 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
+                                    <!-- href="{{url('admin/pegawai')}}" untuk memanggil routing -->
                                     <a class="nav-link" href="{{url('admin/pegawai')}}">Data Pegawai</a>
                                     <a class="nav-link" href="{{url('admin/divisi')}}">Data Divisi</a>
                                     <a class="nav-link" href="">Light Sidenav</a>

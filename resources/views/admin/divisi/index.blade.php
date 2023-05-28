@@ -18,7 +18,7 @@
         DataTable Example -->
         <!-- membuat tombol mengarahkan ke file produk_form.php -->
 
-        <a href="{{url('admin/pegawai/create')}}" class="btn btn-primary btn-sm"> Tambah</a>
+        <a href="{{url('admin/divisi/create')}}" class="btn btn-primary btn-sm"> Tambah</a>
 
     </div>
 
