@@ -52,15 +52,23 @@ class DivisiController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        //arahkan ke file edit yg ada di divisi view
+        $divisi = DB::table('divisi')->where('id', $id)->get();
+
+        return view ('admin.divisi.edit', compact('divisi'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
-        //
+        //buat proses edit form
+        DB::table('divisi')->where('id', $request->id)->update([
+            'nama' => $request->nama,
+        ]);
+        //ketika selesai mengupdate maka arahkan ke halaman admin divisi index
+        return redirect('admin/divisi');
     }
 
     /**
