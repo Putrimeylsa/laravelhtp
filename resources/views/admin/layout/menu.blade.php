@@ -19,7 +19,7 @@
                                     <!-- href="{{url('admin/pegawai')}}" untuk memanggil routing -->
                                     <a class="nav-link" href="{{url('admin/pegawai')}}">Data Pegawai</a>
                                     <a class="nav-link" href="{{url('admin/divisi')}}">Data Divisi</a>
-                                    <a class="nav-link" href="">Light Sidenav</a>
+                                    <a class="nav-link" href="{{url('admin/jabatan')}}">Data Jabatan</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
