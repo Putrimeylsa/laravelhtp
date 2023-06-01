@@ -35,6 +35,7 @@
                                             <th>Jenis Kelamin</th>
                                             <th>Tempat Lahir</th>
                                             <th>Tanggal Lahir</th>
+                                            <th>Kekayaan</th>
                                             <th>Alamat </th>
                                             <th>Foto</th>
                                             <th>Action</th>
@@ -50,6 +51,7 @@
                                             <th>Jenis Kelamin</th>
                                             <th>Tempat Lahir</th>
                                             <th>Tanggal Lahir</th>
+                                            <th>Kekayaan</th>
                                             <th>Alamat </th>
                                             <th>Foto</th>
                                             <th>Action</th>
@@ -71,6 +73,7 @@
                                             <td>{{$p->gender}}</td>
                                             <td>{{$p->tmp_lahir}}</td>
                                             <td>{{$p->tgl_lahir}}</td>
+                                            <td>{{$p->kekayaan}}</td>
                                             <td>{{$p->alamat}}</td>
                                             <td>
                                                 @empty($p->foto)
