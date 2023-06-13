@@ -40,10 +40,12 @@ Route::get('/daftar_nilai', function(){
 //mengarahkan routing ke controller
 Route::get('/siswa', [SiswaController::class, 'dataSiswa']);
 //mengarahkan ke controller dashboardController
+
 //prefix atau group
 Route::prefix('admin')->group(function(){
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('index');
 Route::get('/staff', [StaffController::class, 'index']);
+
 //ini adalah route untuk pegawai
 Route::get('/pegawai',[PegawaiController::class, 'index']);
 Route::get('/pegawai/create', [PegawaiController::class, 'create']);
@@ -54,7 +56,8 @@ Route::get('/pegawai/show/{id}', [PegawaiController::class, 'show']);
 Route::get('/pegawai/delete/{id}', [PegawaiController::class, 'destroy']);
 Route::get('generate-pdf', [PegawaiController::class, 'generatePDF']);
 Route::get('/pegawai/pegawaiPDF', [PegawaiController::class, 'pegawaiPDF']);
-
+Route::get('generate-pdf', [PegawaiController::class, 'generatePDF']);
+Route::get('/pegawai/pegawaiPDF', [PegawaiController::class, 'pegawaiPDF']);
 
 //ini adalah route untuk divisi
 Route::get('/divisi', [DivisiController::class, 'index']);

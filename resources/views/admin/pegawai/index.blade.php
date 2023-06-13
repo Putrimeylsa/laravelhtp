@@ -19,8 +19,12 @@
                                 DataTable Example -->
                                 <!-- membuat tombol mengarahkan ke file produk_form.php -->
                                
-                                <a href="{{url('admin/pegawai/create')}}" class="btn btn-primary btn-sm"> Tambah</a>
+                                <a href="{{url('admin/pegawai/create')}}" class="btn btn-primary btn-sm">Tambah</a>
                                 
+                            </div>
+                            <div class="card-header">
+                            <!-- target="_blank" ->> untuk membuat tab baru -->
+                            <a href="{{url('admin/pegawai/pegawaiPDF')}}" class="btn btn-danger btn-sm" target="_blank"> Export To PDF</a>
                             </div>
 
                             <div class="card-body">

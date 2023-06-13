@@ -25,7 +25,7 @@
 
 
     <div class="card-body">
-        <table id="datatablesSimple">
+        <table id="example">
             <thead>
                 <tr>
                     <th>No</th>

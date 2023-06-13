@@ -30,7 +30,7 @@
         <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js" ></script>
         <script>
 $(document).ready(function() {
-    $('#datatablesSimple').DataTable( {
+    $('#example').DataTable( {
         dom: 'Bfrtip',
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
