@@ -22,6 +22,8 @@
 
     </div>
 
+
+
     <div class="card-body">
         <table id="datatablesSimple">
             <thead>
@@ -84,7 +86,7 @@
                     </td>
                 </tr>
                 @php 
-                $no++;
+                $no++;  
                 @endphp
                 @endforeach
 
@@ -92,4 +94,5 @@
         </table>
     </div>
 </div>
+
 @endsection
