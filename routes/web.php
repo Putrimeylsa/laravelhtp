@@ -58,6 +58,8 @@ Route::get('generate-pdf', [PegawaiController::class, 'generatePDF']);
 Route::get('/pegawai/pegawaiPDF', [PegawaiController::class, 'pegawaiPDF']);
 Route::get('generate-pdf', [PegawaiController::class, 'generatePDF']);
 Route::get('/pegawai/pegawaiPDF', [PegawaiController::class, 'pegawaiPDF']);
+Route::get('/pegawai/exportexcel/', [PegawaiController::class, 'exportExcel']);
+Route::post('/pegawai/importExcel', [PegawaiController::class, 'importExcel']);
 
 //ini adalah route untuk divisi
 Route::get('/divisi', [DivisiController::class, 'index']);

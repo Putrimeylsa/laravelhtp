@@ -19,6 +19,7 @@
                 <th>Tanggal Lahir</th>
                 <th>Kekayaan</th>
                 <th>Alamat</th>
+               
                 
             </tr>
         </thead>
@@ -36,6 +37,7 @@
                 <td>{{$p->tgl_lahir}}</td>
                 <td>{{$p->kekayaan}}</td>
                 <td>{{$p->alamat}}</td>
+               
             </tr>
             @endforeach
         </tbody>
