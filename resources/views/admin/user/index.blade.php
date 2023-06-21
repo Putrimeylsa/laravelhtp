@@ -38,6 +38,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
+                                            <th>Akses</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -51,6 +52,7 @@
                                         <tr>
                                             <td>{{$no}}</td>
                                             <td>{{$u->name}}</td>
+                                            <td>{{$u->role}}</td>
                                             <td>
                                                 <form action="#" method="POST">
                                                   

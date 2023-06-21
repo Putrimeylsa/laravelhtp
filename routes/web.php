@@ -42,7 +42,7 @@ Route::get('/siswa', [SiswaController::class, 'dataSiswa']);
 //mengarahkan ke controller dashboardController
 
 //prefix atau group
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth', 'peran:admin-manajer-staff']], function(){
     Route::prefix('admin')->name('admin.')->group(function(){
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('index');
 Route::get('/staff', [StaffController::class, 'index']);
@@ -88,5 +88,11 @@ Route::get('/user', [UserController::class, 'index']);
 });
 //nantinya pegawai tersebut mengambil pelatihan dan pada table pelatihan bertambah
 Auth::routes();
+Route::get('/after_register', function(){
+    return view ('after_register');
+});
+Route::get('/acces_denied2', function(){
+    return view ('admin/accessdenied');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
